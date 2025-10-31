@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Thanusha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Contact Me</h1>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contact-form">
+    <section>
+      <h2>Get in Touch</h2>
+      <p>If you'd like to connect or collaborate, feel free to reach out through the form below or using my contact details.</p>
+
+      <ul style="list-style:none; padding:0;">
+        <li><strong>📍 Address:</strong> Bangalore</li>
+        <li><strong>📧 Email:</strong> <a href="mailto:ypthanusha70@gmail.com">ypthanusha70@gmail.com</a></li>
+        <li><strong>📞 Phone:</strong> <a href="tel:9591312076">9591312076</a></li>
+      </ul>
+    </section>
+
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" placeholder="Type your message..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 Thanusha | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const navMenu = document.querySelector("nav ul");
+      navMenu.classList.toggle("show");
+    }
+
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Thank you for reaching out! Your message has been noted. Please contact me directly at ypthanusha70@gmail.com for quick replies.");
+      this.reset();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Resume | Thanusha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>My Resume</h1>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html" class="active">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="resume-section">
+    <section>
+      <h2>Personal Information</h2>
+      <ul>
+        <li><strong>Name:</strong> Thanusha</li>
+        <li><strong>Address:</strong> Bangalore</li>
+        <li><strong>Email:</strong> <a href="mailto:ypthanusha70@gmail.com">ypthanusha70@gmail.com</a></li>
+        <li><strong>Contact:</strong> 9591312076</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li><strong>BE - Computer Science and Engineering</strong><br>
+          Gopalan College of Engineering and Management, 2027
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Work Experience</h2>
+      <ul>
+        <li>
+          <strong>Intern – NOVAFUZE</strong> <br>
+          <em>October 2025 - December 2025</em><br>
+          Role: React Native Developer, UI/UX Design
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <strong>E-commerce Platform</strong><br>
+          Developed a full-stack e-commerce platform with user authentication, product listings, shopping cart functionality, and secure payment processing.<br>
+          <em>Tech Stack:</em> React, Node.js, Express, MongoDB, Stripe API<br>
+          <a href="#" target="_blank">View Project (GitHub)</a>
+        </li>
+
+        <li>
+          <strong>Mobile Recipe App</strong><br>
+          Created a mobile application for discovering and saving recipes, featuring ingredient search, meal planning, and user-contributed content.<br>
+          <em>Tech Stack:</em> React Native, Firebase, Redux<br>
+          <a href="#" target="_blank">View Project (GitHub)</a>
+        </li>
+
+        <li>
+          <strong>Collosus Hackathon (Ambedkar College of Engineering)</strong><br>
+          Participated in the Collosus Hackathon, developing a solution for [describe your project briefly].<br>
+          <em>Tech Stack:</em> Python, Django, HTML, CSS<br>
+          <a href="#" target="_blank">View Project (if applicable)</a>
+        </li>
+
+        <li>
+          <strong>GCEM Haccks (Gopalan College of Engineering and Management)</strong><br>
+          Participated in GCEM Haccks, contributing to a project focused on [describe your project briefly].<br>
+          <em>Tech Stack:</em> Java, Android Studio, XML<br>
+          <a href="#" target="_blank">View Project (if applicable)</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Thanusha | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const navMenu = document.querySelector("nav ul");
+      navMenu.classList.toggle("show");
+    }
+  </script>
+</body>
+</html>
